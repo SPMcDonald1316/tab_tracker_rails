@@ -44,4 +44,10 @@ class Api::SongsController < ApplicationController
       render json: {errors: @song.errors.full_messages}
     end
   end
+
+  def destroy
+    @song = Song.find_by(id: params[:id])
+    @song.destroy
+    render 'destroy.json.jb'
+  end
 end
