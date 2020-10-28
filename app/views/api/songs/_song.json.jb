@@ -1,0 +1,11 @@
+{
+  id: song.id,
+  title: song.title,
+  artist: song.artist,
+  genre: song.genre,
+  album: song.album,
+  album_image: song.album_image,
+  youtube_id: song.youtube_id,
+  lyrics: song.lyrics,
+  tab: song.tab
+}
