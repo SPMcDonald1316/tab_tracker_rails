@@ -23,7 +23,7 @@ class Api::SongsController < ApplicationController
     if @song.save
       render 'show.json.jb'
     else
-      render json: {errors: @song.errors.full_messages}
+      render json: {errors: @song.errors.full_messages}, status: :bad_request
     end
   end
 
