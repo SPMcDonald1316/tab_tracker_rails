@@ -6,7 +6,7 @@ class Api::UsersController < ApplicationController
       password: params[:password]
     )
     if user.save
-      render json: { message: "User create sucessfully"}, status: :created
+      render json: { message: "User create sucessfully" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
